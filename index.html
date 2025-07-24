@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMagic - Craft Your Future with Intelligent Precision</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #D1E8E2;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-wu5UVbhHBntPzB98O8cE9IXV.png?st=2025-07-24T13%3A03%3A02Z&se=2025-07-24T15%3A03%3A02Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=475fd488-6c59-44a5-9aa9-31c4db451bea&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T19%3A03%3A14Z&ske=2025-07-24T19%3A03%3A14Z&sks=b&skv=2024-08-04&sig=1vFyzkyx%2Bf4WV1HaWqxL12E137n56xXM6pVdKp/Sc%2BQ%3D" alt="ResuMagic Logo" class="h-12">
+            <h1 class="text-2xl font-bold text-teal-800">ResuMagic</h1>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <section class="bg-white p-6 rounded-lg shadow-md mb-4">
+            <h2 class="text-xl font-semibold text-teal-800 mb-2">User Input & Customization</h2>
+            <form id="userInputForm" class="space-y-4">
+                <div>
+                    <label for="careerGoals" class="block text-gray-700">Career Goals</label>
+                    <input type="text" id="careerGoals" name="careerGoals" class="w-full p-2 border rounded">
+                </div>
+                <div>
+                    <label for="industry" class="block text-gray-700">Industry</label>
+                    <input type="text" id="industry" name="industry" class="w-full p-2 border rounded">
+                </div>
+                <div>
+                    <label for="experience" class="block text-gray-700">Previous Experience</label>
+                    <textarea id="experience" name="experience" class="w-full p-2 border rounded"></textarea>
+                </div>
+                <button type="button" class="bg-gold-500 text-white px-4 py-2 rounded hover:bg-gold-400" onclick="submitUserInput()">Submit</button>
+            </form>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-teal-800 mb-2">Choose Template</h2>
+            <div id="templateSelection" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Template options will be dynamically generated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-teal-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 ResuMagic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
